@@ -7,7 +7,7 @@ Details of the variables are given below.
 
 The variables in the data are fully described in a table below. The response variable will be built from the loan status variable status. The total amount repaid to the bank, totalPaid, cannot be used as a predictor variable because it is information that cannot be known before the loan is issue so be sure not to include it as a predictor in your models. All other variables can be used as predictors, but some are not useful.
 
-**Variable  -   Description** <br>
+**<u>Variable  -   Description</u>** <br>
 
 amount	-   loan amount in dollars <br>
 
