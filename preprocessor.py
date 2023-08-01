@@ -51,21 +51,6 @@ def preprocess_loan_data(loan_data):
     loan_data['state_hashed'] = loan_data['state'].apply(lambda x: hash(x) % state_hash_bins)
     loan_data.drop(columns=['state'], inplace=True)
 
-    # Define the custom mapping for label encoding of 'status' column
-    custom_mapping = {
-        'Charged Off': 5,
-        'Current': 0,
-        'Default': 6,
-        'Fully Paid': 1,
-        'In Grace Period': 2,
-        'Late (16-30 days)': 3,
-        'Late (31-120 days)': 4
-    }
-
-    # Map the 'status' column using the custom label encoding and store the result in a new column and drop the original column
-    loan_data['status_encoded'] = loan_data['status'].map(custom_mapping)
-    loan_data.drop('status', axis=1, inplace=True)
-
     # Convert boolean columns to integers (0 or 1)
     boolean_columns = ['verified_Verified', 'home_OWN', 'home_RENT', 'grade_B', 'grade_C', 'grade_D',
                        'grade_E', 'grade_F', 'grade_G']
