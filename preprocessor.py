@@ -56,7 +56,7 @@ def preprocess_loan_data(loan_data):
                        'grade_E', 'grade_F', 'grade_G']
     loan_data[boolean_columns] = loan_data[boolean_columns].astype(int)
 
-    # Convert 'status' to numerical labels
+    # Convert 'status' to binary class labels: 'Safe' and 'Risky'
     status_mapping = {
         'Fully Paid': 'Safe',
         'Current': 'Safe',
