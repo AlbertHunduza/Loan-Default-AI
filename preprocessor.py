@@ -56,6 +56,19 @@ def preprocess_loan_data(loan_data):
                        'grade_E', 'grade_F', 'grade_G']
     loan_data[boolean_columns] = loan_data[boolean_columns].astype(int)
 
+    # Convert 'status' to numerical labels
+    status_mapping = {
+        'Fully Paid': 'Safe',
+        'Current': 'Safe',
+        'In Grace Period': 'Risky',
+        'Late (16-30 days)': 'Risky',
+        'Late (31-120 days)': 'Risky',
+        'Charged Off': 'Risky',
+        'Default': 'Risky'
+    }
+
+    loan_data['status'] = loan_data['status'].map(status_mapping)
+
     return loan_data
 
 # preprocess the loan data
