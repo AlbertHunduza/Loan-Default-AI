@@ -1,2 +1,2 @@
 # Loan-Approval-AI
-Exploring loan approval biases, developing a predictive model using TensorFlow and deploying it using Flask.
+Exploring loan approval data, developing a predictive model for loan defaults using PyTorch and deploying it using Flask and Heroku.
