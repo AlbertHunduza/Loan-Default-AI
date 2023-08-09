@@ -18,6 +18,8 @@ def preprocess_loan_data(loan_data):
     loan_data.drop('loanID', axis=1, inplace=True)
     # drop the employment column
     loan_data.drop('employment', axis=1, inplace=True)
+    # drop the totalPaid column
+    loan_data.drop('totalPaid', axis=1, inplace=True)
 
     # one-hot encode the 'verified' and home columns
     loan_data = pd.get_dummies(loan_data, columns=['verified'], prefix='verified', drop_first=True)
