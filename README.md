@@ -1,5 +1,4 @@
 # Loan-Approval-AI
-# Loan Default Prediction Project
 
 In the contemporary banking sector, the ability to accurately classify loans as safe or risky is of paramount importance. This classification enables financial institutions to make informed decisions, mitigate potential risks, and ensure the stability of their operations. The Loan Default Prediction project addresses this critical need by leveraging data exploration, machine learning techniques, and predictive modeling to classify loans based on their likelihood of default.
 
