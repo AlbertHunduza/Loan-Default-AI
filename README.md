@@ -38,7 +38,7 @@ Continuing the journey, future work involves optimizing the model further to ach
 
 Feel free to explore the various components of this project and contribute to its advancement. Your feedback and contributions are highly valued!
 
-For inquiries or collaboration, please contact [Your Name](mailto:alberthunduza1@gmail.com).
+For inquiries or collaboration, please contact [Albert Hunduza](mailto:alberthunduza1@gmail.com).
 
 ---
 *Disclaimer: This project is intended for educational and demonstrative purposes. The predictions and classifications made by the model should not be used for real-world financial decisions without thorough validation and professional assessment.*
